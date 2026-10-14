@@ -4,10 +4,19 @@ class Productos:
         self.nombre = nombre
         self.precio = precio
 
+    alimentos = [
+        ["Sandwich", 3000],
+        ["Quepi", 5000]
+        ]
+
     def Crear_Productos():
-        Nombre = input("Como se llama: ")
-        Precio = input("Cuanto vale: ")
-        return (Nombre, Precio)
+        nombre = input("Como se llama: ")
+        precio = input("Cuanto vale: ")
+        return (nombre, precio)
+
+    def Mostrar_Alimentos():
+        for x in Productos.alimentos:
+            print(x)
 
     def __str__(self):
         return f"{self.nombre}: {self.precio}"
