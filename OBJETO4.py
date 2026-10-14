@@ -1,3 +1,4 @@
+from Productos import Productos
 class ComidasEspeciales(Productos):
 
     def __init__(self, nombre, precio, tipo_comida):
