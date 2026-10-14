@@ -2,9 +2,8 @@ from Productos import Productos
 from OBJETO4 import ComidasEspeciales
 from OBJETO5 import Bebidas
 from Pedidos import Pedidos 
-producto = [("Sandwich", 3000), ("Quepi", 5000)]
+
 Palingenesia = 1
-Precio_Total = 0
 
 while Palingenesia:
     print("==========================")
@@ -14,22 +13,13 @@ while Palingenesia:
     print("==========================")
     Opcion_Menu = input()
     if Opcion_Menu == "1":
-        producto.append(Productos.Crear_Productos())
+        Productos.alimentos.append(Productos.Crear_Productos())
     elif Opcion_Menu == "2":
-        for x in producto:
+        for x in Productos.alimentos:
             print(x)
     elif Opcion_Menu == "3":
-         print(Pedidos.Crear_Pedido())
-
-         
-         for x in producto: 
-          Precio_Total += producto[1]
-         print(Precio_Total)
+         pedido = Pedidos()
+         pedido.Crear_Pedido()
     elif Opcion_Menu == "4": 
          Palingenesia = 0
-
-
  
-
-        
-
