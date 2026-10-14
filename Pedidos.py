@@ -3,13 +3,14 @@ from Productos import Productos
 class Pedidos:
 
     def __init__(self):
-        self.Orden = []
-
-
-    def Agregar_Productos(self, Producto):
-        self.Orden.append()
+        pass
         
-
+    def Crear_Pedido():
+        Orden = []
+        print("###############################") 
+        print("¿Que le gustaría ordenar?")
+        print("")  
+        print("###############################") 
 
 
 
