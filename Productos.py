@@ -5,14 +5,14 @@ class Productos:
         self.precio = precio
 
     alimentos = [
-        ["Sandwich", 3000],
-        ["Quepi", 5000]
+        ("Sandwich", 3000),
+        ("Quepi", 5000)
         ]
 
     def Crear_Productos():
         nombre = input("Como se llama: ")
         precio = input("Cuanto vale: ")
-        return (nombre, precio)
+        Productos.alimentos.append((nombre, precio))
 
     def Mostrar_Alimentos():
         for x in Productos.alimentos:
