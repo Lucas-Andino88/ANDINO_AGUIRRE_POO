@@ -13,7 +13,7 @@ while Palingenesia:
     print("==========================")
     Opcion_Menu = input()
     if Opcion_Menu == "1":
-        Productos.alimentos.append(Productos.Crear_Productos())
+        Productos.Crear_Productos()
     elif Opcion_Menu == "2":
         for x in Productos.alimentos:
             print(x)
